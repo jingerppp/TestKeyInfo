@@ -33,16 +33,16 @@ public class MainActivity extends Activity {
                 "keyCode = %d\n" +
                 "scanCode = 0x%x\n" +
                 "deviceId = %d\n" +
-        		"isSystem = %b\n" +
-        		"downTime = %d\n" +
-        		"eventTime = %d\n" +
-        		"source = 0x%x\n" +
-        		"repeatCount = %d\n" +
-        		"action = %s", keyCode, event.getScanCode(),
-        		event.getDeviceId(),  event.isSystem(),
-        		event.getDownTime(), event.getEventTime(),
-        		event.getSource(), event.getRepeatCount(),
-        		KeyEvent.actionToString(event.getAction()));
+                "isSystem = %b\n" +
+                "downTime = %d\n" +
+                "eventTime = %d\n" +
+                "source = 0x%x\n" +
+                "repeatCount = %d\n" +
+                "action = %s", keyCode, event.getScanCode(),
+                event.getDeviceId(),  event.isSystem(),
+                event.getDownTime(), event.getEventTime(),
+                event.getSource(), event.getRepeatCount(),
+                KeyEvent.actionToString(event.getAction()));
         
         mKeyInfo.setText(info);
     }
